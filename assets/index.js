@@ -15,7 +15,7 @@ btn.addEventListener("click", (e) => {
 
     // Create delete btn
     let img = document.createElement("img");
-    img.src = "assets/del.png";
+    img.src = "del.png";
     img.classList.add("delete");
 
     // Create Checkbox
