@@ -1,7 +1,7 @@
 let userInput = document.getElementsByTagName("input")[0];
 let btn = document.getElementsByTagName("button")[0];
 let taskContainer = document.getElementsByTagName("ul")[0];
-let deleteBtn = `<img class="delete" src="del.png"/>
+let deleteBtn = `<img class="delete cursor-pointer" src="del.png"/>
 `;
 
 showData();
@@ -15,11 +15,7 @@ btn.addEventListener("click", (e) => {
 
     // Create delete btn
     let img = document.createElement("img");
-<<<<<<< HEAD
     img.src = "del.png";
-=======
-    img.src = "/to-do-list/assets/del.png";
->>>>>>> ceca592cbf451ad3e229662484405ce1387321fb
     img.classList.add("delete");
 
     // Create Checkbox
