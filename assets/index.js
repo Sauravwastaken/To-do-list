@@ -6,7 +6,7 @@ let deleteBtn = `<img class="delete cursor-pointer" src="del.png"/>
 
 showData();
 
-btn.addEventListener("click", (e) => {
+function mainFunc() {
   if (userInput.value != "") {
     userInput.placeholder = "What's the task today?";
     // Create list
@@ -34,6 +34,17 @@ btn.addEventListener("click", (e) => {
   }
 
   saveData();
+}
+
+btn.addEventListener("click", (e) => {
+  mainFunc();
+});
+
+userInput.addEventListener("keypress", (e) => {
+  if (e.key === "Enter") {
+    mainFunc();
+    console.log("Helo");
+  }
 });
 
 taskContainer.addEventListener("click", function (e) {
